@@ -1,0 +1,19 @@
+{
+  "name": "croc-and-cycle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A self-contained animated SVG crocodile bicycle scene with reproducible MP4 export.",
+  "scripts": {
+    "build:html": "python scripts/build_html.py",
+    "check:html": "python scripts/build_html.py --check",
+    "sample:video": "python scripts/sample_frames.py",
+    "render:video": "node scripts/render_video.cjs",
+    "video": "python scripts/sample_frames.py && node scripts/render_video.cjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  }
+}
